@@ -54,7 +54,7 @@ def create_messages(queue_url):
         except ClientError as e:
             print("Client error: %s" % e)
 
-# Read messages in queue. Also deletes messages after all is read            
+# Read messages in queue. Also deletes messages after they are all read       
 def receive_messages(queue_url):
     print('Reading messages')
     while True:
